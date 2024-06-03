@@ -120,22 +120,31 @@ experiences:
             - Management Experience
             - Certifications
             - Multiple roles
-      - role: UI Developer
-        time: 2012 - 2014
-        company: Amazon, London
+      - role: Technician, Administrator and Developer
+        time: 1999 - 2024
+        company: Outboost Computers
         details: |
-          Describe your role here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-          Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Donec quam felis, ultricies nec,
-          pellentesque eu, pretium quis, sem.
-            - Bullet point
-            - Bullet point
+          During my early days in computing I slowly educated myself in all things Internet.  From
+          graphic design and branding, hardware repair and installation to software development and
+          programming, I learned how to use networking and the internet to it's full potential starting
+          a multi-decade journey of education and appreciation for the technology we all know and use
+          in our day-to-day lives.  Outboost has been a fundamental component of my continued education and
+          expertise in today's CS/IT landscape.
+            - Computer Repair (Certified DELL)
+            - Network Security Administration
+            - Physical Security & Surveillance Systems
+            - Hosting Solutions
+            - Website Development
+            - Graphic Design & Branding
+            - E-Commerce
+            - Payment Processing
+            - Project Management
+            - Wireless Communication
 
 certifications:
       title: Certifications
       list:
-        - name: CV Builder
+        - name: A+ Network+ Security+
           start: 2020
           end: 2021
           organization: Microsoft
