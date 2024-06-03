@@ -69,26 +69,22 @@ career-profile:
       network or learn new things with me today, and tomorrow.
         
 education:
-    title: Education
-    info:
+    title: Education Information
+    info: Other info field
       - degree: A+ Network+ Security+ Certified IT Professional
-        university: CompTIA
+        university: CompTIA (Comptia.org)
         time: 1997 - 2012
         details: |
           Study Information here.
-            - Bullet point
-            - Bullet point
-      - degree: BSc in Applied Mathematics
-        university: Bristol University
+            - 20 Years Experience
+            - Fully Scaled skillset
+      - degree: C-7 Abrasive Blaster | C-12 Airless Spray Operator | C-14 Plural Component Operator
+        university: Society for Protective Coatings (SSPC.org)
         time: 2007 - 2011
         details: |
-          Describe your study here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-          sociis natoque penatibus et magnis dis parturient montes, nascetur
-          ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-          pretium quis, sem.
-            - Bullet point
-            - Bullet point
+          Study Information here.
+            - 15 Years Experience
+            - Multi-Role capable
 
 experiences:
     title: Work Profile
