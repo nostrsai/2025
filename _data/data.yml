@@ -8,26 +8,19 @@ sidebar:
     education: True # set to False if you want education in main section instead of in sidebar
 
     # Profile information
-    name: Alan Doe
-    tagline: Full Stack Developer
+    name: Timothy Horn
+    tagline: CAS-1 | CS/IT Specialist
     avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
-    email: hello@webjeda.com
-    phone: 012 345 6789
-    timezone: America/Cancun Timezone
-    citizenship:
-    website: blog.webjeda.com #do not add http://
-    linkedin: alandoe
-    xing: alandoe
-    github: sharu725
-    telegram: # add your nickname without '@' sign
-    gitlab:
-    bitbucket:
-    twitter: '@webjeda'
-    stack-overflow: # Number/Username, e.g. 123456/alandoe
-    codewars:
-    goodreads: # Number-Username, e.g. 123456-alandoe
+    email: thorn@outboost.com
+    phone: 757 977 7997
+    timezone: America/New York Timezone
+    citizenship: USA
+    website: 757btc.org #do not add http://
+    linkedin: www.linkedin.com/in/thorn81
+    github: nostrsai
+    telegram: fiber
     pdf: http://www.africau.edu/images/default/sample.pdf
 
     languages:
@@ -45,36 +38,27 @@ sidebar:
     interests:
       title: Interests
       info:
-        - item: Climbing
+        - item: Information Technology & Cyber Security
           link:
 
-        - item: Snowboarding
+        - item: Bitcoin Development & FOSS
           link:
 
-        - item: Cooking
+        - item: Protective Coatings
           link:
 
 career-profile:
-    title: Career Profile
+    title: Who is Timothy Horn?
     summary: |
-      Summarise your career here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. You can [download this free resume/CV template here]().
-      Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
-      penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-      Donec quam felis, ultricies nec, pellentesque eu.
-      Second paragraph if required.
+      It's safe to say Timothy Horn is the shit.
 education:
     title: Education
     info:
-      - degree: MSc in Computer Science
-        university: University of London
-        time: 2011 - 2012
+      - degree: A+ Network+ Security+ Certified IT Professional
+        university: CompTIA
+        time: 1997 - 2012
         details: |
-          Describe your study here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-          sociis natoque penatibus et magnis dis parturient montes, nascetur
-          ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-          pretium quis, sem.
+          Study Information here.
             - Bullet point
             - Bullet point
       - degree: BSc in Applied Mathematics
