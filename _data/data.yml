@@ -70,7 +70,7 @@ career-profile:
         
 education:
     title: Education Information
-    info: Other info field
+    info:
       - degree: A+ Network+ Security+ Certified IT Professional
         university: CompTIA (Comptia.org)
         time: 1997 - 2012
