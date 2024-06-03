@@ -29,19 +29,16 @@ sidebar:
         - idiom: English
           level: Native
 
-        - idiom: French
-          level: Professional
-
         - idiom: Spanish
-          level: Professional
+          level: Intermediate
 
     interests:
       title: Interests
       info:
-        - item: Information Technology & Cyber Security
-          link:
+        - item: Blockchain Bitcoin
+          link: 757btc.org
 
-        - item: Bitcoin Development & FOSS
+        - item: AI, Decentralization Theory, Self Custody
           link:
 
         - item: Protective Coatings
@@ -50,7 +47,17 @@ sidebar:
 career-profile:
     title: Who is Timothy Horn?
     summary: |
-      It's safe to say Timothy Horn is the shit.
+      I created this resource to quickly get to know me.  If you're here it is possible I may be applying
+      for a position, performing work for you, or expanding my network.
+
+      I'm a local of Hampton for 10+ years, with experience in our local maritime economy.  I've worked in
+      Shipyards, on bridges, and errected a few buildings in the area while expanding my skilled trades
+      experience, with ancillary experience in framing, construction and fabrication.
+
+      In addition to skilled trades, I have also maintained and am currently expanding my IT / Cyber security
+      portfolio.  I have over 25 years experience in Information Technology, with A+ Network+ and
+      Security+ certifications.
+        
 education:
     title: Education
     info:
