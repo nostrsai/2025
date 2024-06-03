@@ -134,54 +134,40 @@ experiences:
 certifications:
       title: Certifications
       list:
-        - name: A+ Network+ Security+
-          start: 2020
-          end: 2021
-          organization: Microsoft
-          credentialid: 111-222
-          credentialurl: www.google.com
-          credentialname: Google
+        - name: Certified IT Security Professional
+          start: 1999
+          end: 2024
+          organization: CompTIA
+          credentialid: A+ | Network+ | Security+
+          credentialurl: comptia.org
+          credentialname: CompTIA
           details: |
-            Details about cert. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.
-            Nullam eget orci purus. Nullam ultrices neque nibh.
-            Aenean fermentum, felis vulputate suscipit accumsan,
-            sem enim bibendum augue, sed convallis arcu lacus at dui.
-            Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-            Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-            Praesent venenatis erat non augue suscipit consectetur.
+            The CompTIA certifications have been a huge benefit to my book, showcasing my ability
+            to operate successful networks.  My education in risk management, vulnerabilities and
+            policy have been useful in other industries. I am very confident in IT situations and
+            pride myself on providing solutions.
 
-            Second paragraph. Sed eleifend enim ante, vitae efficitur purus
-            fringilla vel. Ut euismod, sem sed vulputate venenatis,
-            justo diam viverra velit, sed rhoncus leo leo eu justo.
-            Suspendisse placerat risus ante, sed porta nisi blandit at.
-        - name: Git learning
-          start: 2019
-          end:
-          organization: Microsoft
-          credentialid: 111-222
-          credentialurl: www.github.com
-          credentialname: Github
+        - name: Certified Coatings Application Specialist
+          start: 2015
+          end: 2024
+          organization: Society of Protective Coatings
+          credentialid: C-7 | C-12 | C-14
+          credentialurl: sspc.org
+          credentialname: SSPC
           details: |
-            Older certification. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.
-            Nullam eget orci purus. Nullam ultrices neque nibh.
-            Aenean fermentum, felis vulputate suscipit accumsan,
-            sem enim bibendum augue, sed convallis arcu lacus at dui.
-            Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-            Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-            Praesent venenatis erat non augue suscipit consectetur.
+            My SSPC certifications enable me to supervise and execute Surface Preparation, proper
+            removal of degraded coatings, and Application of Protective Coating systems.  I have a
+            perfect working knowledge of all the systems and tools used in these proceeses, as well
+            as the applicable MIL Spec and OSHA standards.
 
 projects:
-    title: Projects
+    title: Side Projects
     intro: >
-      You can list your side projects in this
-      section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+      Other things that I'm usually up to:
     assignments:
-      - title: Velocity
+      - title: Founder, Local IT/Blockchain Group
         link: "#hook"
-        tagline: "A responsive website template designed to help startups promote, market and sell their products."
+        tagline: "Discussions research into decentralization, cryptography and privacy."
 
       - title: DevStudio
         link: "#"
