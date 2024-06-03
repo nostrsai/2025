@@ -91,34 +91,39 @@ education:
             - Bullet point
 
 experiences:
-    title: Experiences
+    title: Work Profile
     info:
-      - role: Lead Developer
-        time: 2015 - Present
-        company: Startup Hubs, San Francisco
+      - role: Blaster, Powder Coater, Sprayer
+        time: 2018 - 2024
+        company: Vanwin Coatings of Virginia
         details: |
-          Describe your role here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-          Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Donec quam felis, ultricies nec,
-          pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-          enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-          error sit voluptatem accusantium doloremque laudantium, totam rem
-          aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-          architecto beatae vitae dicta sunt explicabo.
-            - Bullet point
-            - Bullet point
-      - role: Senior Software Engineer
-        time: 2014 - 2015
-        company: Google, London
+          While with VanWin Coatings, I learned the precarious task of powder coatings.
+          Able to fill multiple roles, from powder coating, abrasive blasting and painting,
+          I used my experience to help deliver high quality products to our partners in the
+          shipbuilding and repair industry.  Additionally, our facilities executed contracts
+          for industrial and even personal protective coatings.  I assisted in day-to-day
+          operations in-shop and on-site, helped engineer and deploy saftey strategies, maintained
+          machinery as well as provided certified skilled labor.  I was required to assist
+          with shipping and logistics, and operate heavy equipment.
+            - Long Term 
+            - Protective Coatings
+            - Surface Preparation
+            - MIL Spec
+            - OSHA Compliant QP1/QP2 
+      - role: Production Foreman, Blaster, Painter
+        time: 2015 - 2019
+        company: Marine Specialty Painting
         details: |
-          Describe your role here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-          Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Donec quam felis, ultricies nec,
-          pellentesque eu, pretium quis, sem.
-            - Bullet point
-            - Bullet point
+          MSP is where I earned my stripes in the coatings business, starting off at entry level.
+          My first assigned job was Sp-3 surface prep using pneumatic tools.  After gathering
+          experience in applying coatings, removing degraded coatings, and preparing surfaces per
+          MIL Spec, I went on to supervise my own crews, as well as recieve my 7/12/14 certifications.
+            - Entry Point into Protective Coatings
+            - Invaluable Field Experience
+            - Rapid Advancement
+            - Management Experience
+            - Certifications
+            - Multiple roles
       - role: UI Developer
         time: 2012 - 2014
         company: Amazon, London
@@ -200,7 +205,7 @@ projects:
         tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
 
 oss:
-    title: OSS Contributions
+    title: Recent Contributions
     intro: >
       You can list your open source software contributions in this
       section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -219,11 +224,9 @@ oss:
         tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
 
 publications:
-    title: Publications
+    title: Recent Interests
     intro: |
-      You can list your publications in this section. Lorem ipsum dolor sit
-      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-      bibendum fringilla a eu lectus.
+      I am currently into: 
     papers:
       - title: The Art of Computer Programming
         link: "#"
@@ -263,4 +266,4 @@ skills:
         level: 99%
 
 footer: >
-    Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
+    Designed with <i class="fas fa-heart"></i> by <a href="mailto:thorn@outboost.com" target="_blank" rel="nofollow">Timothy Horn</a>
