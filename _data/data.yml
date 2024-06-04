@@ -195,20 +195,20 @@ publications:
     intro: |
       I am currently into: 
     papers:
-      - title: The Art of Computer Programming
-        link: "#"
-        authors: Donald E. Knuth
-        conference: Addison-Wesley, 1968
+      - title: UFOs and the 21st Century Mind
+        link: "https://www.amazon.com/UFOs-21st-Century-Mind-Definitive/dp/B0CG7FSTQK/ref=sr_1_2?dib=eyJ2IjoiMSJ9.e2D09Jux-h4266JAd2rXbFbceXUCMWF4bCFE-aeIiaBm1NAwZpu6WzANp05NJ8AucEGEao-lhzAXbRRKlVuMkvnQp1JNVCdPqFkrSjCjaZI9H9XWJOhgyvq2srMBi9NtVW_8HexkUAnv4V5eiVLZnK4F3dODiqFiIkXg4MyyInMZQ0H31VEZ3dj3Y5u_NiMmrYroAuHCLOlW-ox4TAPWTZUzmt77-50zgkDFoa5dhNI.9oHXxS9rMeeiGDRQp2e7ERdf7A4eBCPiCJS8BUs2YII&dib_tag=se&qid=1717472213&refinements=p_27%3ARichard+Dolan&s=books&sr=1-2"
+        authors: Richard Dolan
+        conference: Richard Dolan Press
 
-      - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-        link: "#"
-        authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-        conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
+      - title: 48 Laws of Power
+        link: "https://www.amazon.com/48-Laws-Power-Robert-Greene/dp/0140280197/ref=sr_1_1?crid=2EN2PYWPNGNNM&dib=eyJ2IjoiMSJ9.T5tgWF9AJ2WBtrFDjeqsUsxUi7riA8z7rmbp7bAbPjERVEACI6qmybFevqpBHI1Virna6JJaGrpjb13nmX8Fx1Gjuz-gGcv3IXogzkMLsSgUe8v5qc5UOtunV0oCY7ZAT-1NCZf-TL5LoJyi4JQ73vNFmF_0q1KaXPBGMgNR1gwEnRgdxfHQTiIKIuzptG1DRitEmzF47Iu5a8mVK4FJ4Ku5O0Jng91EZSHBnId9rlo.5uWz-uVfN2jvlMV0mr_s900IH9r1-h4Mq45PcTMA9m8&dib_tag=se&keywords=Laws+of+power&qid=1717472451&s=books&sprefix=laws+of+power%2Cstripbooks%2C111&sr=1-1"
+        authors: Robert Greene
+        conference: Penguin Books
 
-      - title: A syntax directed compiler for Algol 60
-        link: "#"
-        authors: Edgar T. Irons
-        conference: "Comm. ACM 4 (1961), 51–55"
+      - title: Bitcoin Whitepaper
+        link: "https://bitcoin.org/bitcoin.pdf"
+        authors: Satoshi Nakamoto
+        conference: Uknown/2008
 
 skills:
     title: Skills &amp; Proficiency
