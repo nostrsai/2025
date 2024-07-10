@@ -10,7 +10,7 @@ sidebar:
     # Profile information
     name: Timothy Horn
     tagline: Administrator & Analyst (IT) Security Specialist (OPSEC)
-    avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+    avatar: png.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
     email: thorn@outboost.com
@@ -91,10 +91,7 @@ experiences:
         time: 2015 - 2019
         company: Marine Specialty Painting
         details: |
-          MSP is where I earned my stripes in the coatings business, starting off at entry level.
-          My first assigned job was Sp-3 surface prep using pneumatic tools.  After gathering
-          experience in applying coatings, removing degraded coatings, and preparing surfaces per
-          MIL Spec, I went on to supervise my own crews, as well as recieve my 7/12/14 certifications.
+          MSP is an important partner to Hampton Roads, and 
             - Entry Point into Protective Coatings
             - Invaluable Field Experience
             - Rapid Advancement
