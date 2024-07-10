@@ -9,7 +9,7 @@ sidebar:
 
     # Profile information
     name: Timothy Horn
-    tagline: CAS-1 | CS/IT Specialist
+    tagline: IT IOT Security+
     avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
@@ -20,8 +20,7 @@ sidebar:
     website: 757btc.org #do not add http://
     linkedin: www.linkedin.com/in/thorn81
     github: nostrsai
-    telegram: fiber
-    pdf: http://www.africau.edu/images/default/sample.pdf
+    pdf: https://nostrsai.github.io/2024/
 
     languages:
       title: Languages
@@ -47,17 +46,9 @@ sidebar:
 career-profile:
     title: Timothy Horn - 43 - Hampton VA
     summary: |
-      I started my Computer journey early, 1996. Subsequently, I have also been a part of the Shipyard industry
-      in our area since 2008.  There are references both to my IT certifications, and my Protective Coatings
-      certifications here. While my expertise in IT/CS has increased over 20+ years I also have the benefit
-      of a handful of skilled trades, with 10-15 years experience and found dominance and a sense of contribution
-      helping execute contracts at the behedst of those who serve in our Military.  I appreciate the detail of MIL
-      spec standards, and find sembelance between the intricacies of IT and the specifications and standards we use
-      in todays Protective Coating systems.
+      IT Security | 
       
-      I am in search of positions which will help me utilize my skillsets, and a positive environment where I 
-      can continue my education while providing valuable work and service.
-        
+      I'm blahblahblabhhl
 education:
     title: Education
     info:
