@@ -182,7 +182,7 @@ oss:
         tagline: "Local Hampton Roads Meetup"
 
 publications:
-    title: Recent Reads
+    title: Resources 
     intro: |
       Suggested Reading
     papers:
@@ -205,17 +205,17 @@ skills:
     title: Skills &amp; Proficiency
 
     toolset:
-      - name: Computers
+      - name: IT
         level: 97%
 
-      - name: Construction
-        level: 55%
+      - name: Infrastructure
+        level: 80%
 
-      - name: Coatings
+      - name: Systems
         level: 90%
 
       - name: Management
-        level: 70%
+        level: 80%
 
       - name: Programming
         level: 55%
