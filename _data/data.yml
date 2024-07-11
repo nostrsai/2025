@@ -9,7 +9,7 @@ sidebar:
 
     # Profile information
     name: Timothy Horn
-    tagline: Administrator & Analyst (IT) Security Specialist (OPSEC)
+    tagline: Timothy Horn Resume
     avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
@@ -46,7 +46,7 @@ sidebar:
 career-profile:
     title: Timothy Horn - 43 - Hampton VA
     summary: |
-      IT Security | 
+      IT Security
       This blshbl.
 education:
     title: Education
@@ -101,12 +101,7 @@ experiences:
         time: 1999 - 2024
         company: Outboost Computers
         details: |
-          During my early days in computing I slowly educated myself in all things Internet.  From
-          graphic design and branding, hardware repair and installation to software development and
-          programming, I learned how to use networking and the internet to it's full potential starting
-          a multi-decade journey of education and appreciation for the technology we all know and use
-          in our day-to-day lives.  Outboost has been a fundamental component of my continued education and
-          expertise in today's CS/IT landscape.
+          One of my first and longest positions. I have leveraged much of my IT skill, technical prowess and design talents with Outboost.  We still provide services to our clients to this day, with a strong focus in Cryptography and Security.
             - Computer Repair (Certified DELL)
             - Network Security Administration
             - Physical Security & Surveillance Systems
