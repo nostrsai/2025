@@ -126,40 +126,41 @@ certifications:
           credentialurl: sspc.org
           credentialname: SSPC
           details: |
-            My SSPC certifications enable me to supervise and execute Surface Preparation, proper
-            removal of degraded coatings, and Application of Protective Coating systems.  I have a
-            perfect working knowledge of all the systems and tools used in these proceeses, as well
-            as the applicable MIL Spec and OSHA standards.
+            My SSPC certifications enable me to supervise and execute Surface Preparation, proper removal of degraded coatings, and Application of Protective Coating systems.  I have a perfect working knowledge of all the systems and tools used in these proceeses, as well as the applicable MIL Spec and OSHA standards.
 
 projects:
-    title: Side Projects
+    title: Personal Projects
     intro: >
-      Other things that I'm usually up to:
+      I am drawn to the premise of consensus and I deeply appreciate the use-case for immutable ledgers.  I'm an advocate of Privacy and I continue my Education and Journey exploring Blockchain and LLM Technologies. 
     assignments:
-      - title: Founder, Local IT/Blockchain Group
-        link: "#hook"
-        tagline: "Discussions research into decentralization, cryptography and privacy."
+      - title: Founder - 757BTC 
+        link: "757btc.org"
+        tagline: "A Hampton Roads meetup centered around the benefits and education of Bitcoin."
 
       - title: Bitcoin & Nostr Development
-        link: "#"
-        tagline: "Immutable ledgers, and decentralized protocols."
+        link: "nostr.band"
+        tagline: "Immutable ledgers, decentralized protocols and sensor-resistant social media."
 
 oss:
-    title: Recent Events
+    title: Attendance
     intro: >
-      Some places we may have met lately!
+      Recent venues I have visited or spoken at... 
     contributions:
-      - title: BTC 2023 Miami
+      - title: BTC 2023 (Miami)
         link: "#"
         tagline: "Yearly Bitcoin conference hosted by Bitcoin Magazine"
 
-      - title: NOSTRVille 2023 Nashville
+      - title: Nostrville 2023 (Nashville)
         link: "#"
-        tagline: "The inaugural Nostr Conference hosted by Bitcoin Park"
+        tagline: "First Nostr Event hosted by Bitcoin Park"
 
-      - title: 757BTC.org Portsmouth
+      - title: 757BTC Hampton Roads meetup
         link: "757btc.org"
-        tagline: "Local Hampton Roads Meetup"
+        tagline: "Where HR Locals discuss Bitcoin"
+
+      - title: BTC 2024 (Nashville)
+        link: "#"
+        tagline: "Yearly Bitcoin conference hosted by Bitcoin Magazine"
 
 publications:
     title: Mentioned 
