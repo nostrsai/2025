@@ -179,7 +179,7 @@ oss:
 
 publications:
     title: Mentioned 
-    intro: | adsf
+    intro: |
       Resources I may have discussed with you
     papers:
       - title: UFOs and the 21st Century Mind
@@ -198,7 +198,7 @@ publications:
         conference: Uknown/2008
 
 skills:
-    title: XP / Skill
+    title: Skill Level
 
     toolset:
       - name: IT
