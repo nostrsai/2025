@@ -69,6 +69,21 @@ education:
 experiences:
     title: Work Profile
     info:
+      - role: Technician, Administrator and Developer
+        time: 1999 - 2024
+        company: Outboost Computers
+        details: |
+          One of my first and longest positions. I have leveraged much of my IT skill, technical prowess and design talents with Outboost.  We still provide services to our clients to this day, with a strong focus in Cryptography and Security.
+            - Computer Repair (Certified DELL)
+            - Network Security Administration
+            - Physical Security & Surveillance Systems
+            - Hosting Solutions
+            - Website Development
+            - Graphic Design & Branding
+            - E-Commerce
+            - Payment Processing
+            - Project Management
+            - Wireless Communication
       - role: Blaster, Powder Coater, Sprayer
         time: 2018 - 2024
         company: Vanwin Coatings of Virginia
@@ -85,7 +100,7 @@ experiences:
             - Protective Coatings
             - Surface Preparation
             - MIL Spec
-            - OSHA Compliant QP1/QP2 
+            - OSHA Compliant QP1/QP2
       - role: Production Foreman, Blaster, Painter
         time: 2015 - 2019
         company: Marine Specialty Painting
@@ -97,22 +112,6 @@ experiences:
             - Management Experience
             - Certifications
             - Multiple roles
-      - role: Technician, Administrator and Developer
-        time: 1999 - 2024
-        company: Outboost Computers
-        details: |
-          One of my first and longest positions. I have leveraged much of my IT skill, technical prowess and design talents with Outboost.  We still provide services to our clients to this day, with a strong focus in Cryptography and Security.
-            - Computer Repair (Certified DELL)
-            - Network Security Administration
-            - Physical Security & Surveillance Systems
-            - Hosting Solutions
-            - Website Development
-            - Graphic Design & Branding
-            - E-Commerce
-            - Payment Processing
-            - Project Management
-            - Wireless Communication
-
 certifications:
       title: Certifications
       list:
