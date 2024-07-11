@@ -9,7 +9,7 @@ sidebar:
 
     # Profile information
     name: Timothy Horn
-    tagline: Timothy Horn Resume
+    tagline: Administrator & Analyst (IT) Network & Operations Security (OPSEC) OSINT/FOSS Professional
     avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
@@ -88,14 +88,7 @@ experiences:
         time: 2018 - 2024
         company: Vanwin Coatings of Virginia
         details: |
-          While with VanWin Coatings, I learned the precarious task of powder coatings.
-          Able to fill multiple roles, from powder coating, abrasive blasting and painting,
-          I used my experience to help deliver high quality products to our partners in the
-          shipbuilding and repair industry.  Additionally, our facilities executed contracts
-          for industrial and even personal protective coatings.  I assisted in day-to-day
-          operations in-shop and on-site, helped engineer and deploy saftey strategies, maintained
-          machinery as well as provided certified skilled labor.  I was required to assist
-          with shipping and logistics, and operate heavy equipment.
+          While at VanWin I learned to expand my coatings skillset to include powder coatings and flame spray application.  Heavy Equipment operation, maintainance of legacy systems and logistics were also required.
             - Long Term 
             - Protective Coatings
             - Surface Preparation
@@ -123,10 +116,7 @@ certifications:
           credentialurl: comptia.org
           credentialname: CompTIA
           details: |
-            The CompTIA certifications have been a huge benefit to my book, showcasing my ability
-            to operate successful networks.  My education in risk management, vulnerabilities and
-            policy have been useful in other industries. I am very confident in IT situations and
-            pride myself on providing solutions.
+            My education in risk management, vulnerabilities and policy have been invaluable. I am very confident in IT roles and pride myself on finding solutions. CompTIA has been an excellent addition to my credentials, and a powerful key that helped to unlock my potential.
 
         - name: Certified Coatings Application Specialist
           start: 2015
