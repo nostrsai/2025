@@ -9,7 +9,7 @@ sidebar:
 
     # Profile information
     name: Timothy Horn
-    tagline: IT — OPSEC Certified CSIT Practitioner
+    tagline: Administrator - Engineer (IT)
     avatar: nycfist.jpg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
@@ -20,7 +20,7 @@ sidebar:
     website: 757btc.org #do not add http://
     linkedin: www.linkedin.com/in/thorn81
     github: nostrsai
-    pdf: https://nostrsai.github.io/2024/ITResume_Thorn.pdf
+    pdf: https://nostrsai.github.io/2025/ITResume_Thorn.pdf
 
     languages:
       title: Languages
@@ -46,7 +46,7 @@ sidebar:
 career-profile:
     title: Timothy Horn - 43 - Hampton VA
     summary: |
-      Welcome to the Gateway of connection.  I leverage my CSINT & OPSEC experience and deploy strategies and solutions which deliver immediate and fulfilling results.  Spanning a number of industries and disciplines, I bring clarity and resolute execution to the projects and tasks I bring into my timeline.  For a connection that is real, and positivity that drives progress, reach out and open a dialog where we explore how our endeavours come to fruition.
+      I deploy strategies and solutions that deliver immediate, impactful results. Drawing from a diverse range of industries and disciplines, I bring clarity and decisive execution to every project I undertake. For genuine connections and a positive drive towards progress, reach out and start a conversation. Let's explore how our efforts can come to fruition.
 education:
     title: Education
     info:
@@ -72,7 +72,7 @@ experiences:
         time: 1999 - 2024
         company: Outboost Computers
         details: |
-          One of my first and longest positions. I have leveraged much of my IT skill, technical prowess and design talents with Outboost.  We still provide services to our clients to this day, with a strong focus in Cryptography and Security.
+          Small Business centered in repair and diagnostics of computer equipment.
             - Computer Repair (Certified DELL)
             - Network Security Administration
             - Physical Security & Surveillance Systems
@@ -83,21 +83,22 @@ experiences:
             - Payment Processing
             - Project Management
             - Wireless Communication
-      - role: Blaster, Powder Coater, Sprayer
+      - role: Coatings Specialist
         time: 2018 - 2024
         company: Vanwin Coatings of Virginia
         details: |
-          While at VanWin I learned to expand my coatings skillset to include powder coatings and flame spray application.  Heavy Equipment operation, maintainance of legacy systems and logistics were also required.
-            - Long Term 
+          WOSMB Contractor with a focus on Mil-Spec and Maritime/Government Protective Coatings.
+            - Maritime Environments 
             - Protective Coatings
             - Surface Preparation
             - MIL Spec
+            - Primary Customer: US Navy
             - OSHA Compliant QP1/QP2
-      - role: Production Foreman, Blaster, Painter
+      - role: Production Foreman, Blaster, Sprayer
         time: 2015 - 2019
         company: Marine Specialty Painting
         details: |
-          MSP is an important partner to Hampton Roads, and 
+          Contractor primarily servicing Government/Navy vessels in Dry Dock. 
             - Entry Point into Protective Coatings
             - Invaluable Field Experience
             - Rapid Advancement
