@@ -1,14 +1,82 @@
 /* Targeted layout overrides */
-.sidebar-wrapper .languages-container,
-.sidebar-wrapper .interests-container,
 .sidebar-wrapper .remove-container {
   display: none !important;
+}
+
+/* Let the right/profile column carry the lower portfolio cards under Education. */
+.sidebar-wrapper .section {
+  margin: 10px 18px;
+  padding: 13px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.075);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.026);
+  box-shadow: none;
+}
+
+.sidebar-wrapper .section-title {
+  position: relative;
+  margin: 0 0 10px;
+  padding-left: 28px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.13em;
+}
+
+.sidebar-wrapper .section-title::before {
+  content: "//";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #7ee7ff;
+}
+
+.sidebar-wrapper .section-title .fa-stack,
+.main-wrapper .section-title .fa-stack {
+  display: none;
+}
+
+.sidebar-wrapper .section .item {
+  margin-bottom: 8px;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 11px;
+  background: rgba(2, 5, 12, 0.22);
+}
+
+.sidebar-wrapper .section .item:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar-wrapper .project-title,
+.sidebar-wrapper .publication-title {
+  display: block;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.25;
+  margin: 0 0 4px;
+}
+
+.sidebar-wrapper .project-tagline,
+.sidebar-wrapper .publication-authors,
+.sidebar-wrapper .publication-conference,
+.sidebar-wrapper .intro {
+  color: rgba(226, 239, 255, 0.78);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.sidebar-wrapper .intro p {
+  margin-bottom: 8px;
 }
 
 .main-sidebar-cards-section .main-card-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
+  gap: 8px;
 }
 
 .main-sidebar-cards-section .profile-mini-card {
@@ -17,18 +85,96 @@
 
 .main-sidebar-cards-section .profile-mini-card ul {
   margin-bottom: 0;
+  padding-left: 16px;
 }
 
 .main-sidebar-cards-section .profile-mini-card li {
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 }
 
 .main-sidebar-cards-section .lang-desc {
   color: rgba(178, 210, 234, 0.78);
 }
 
+/* Skill labels were too wide for the mini bars. */
+.skillset .item {
+  display: grid;
+  grid-template-columns: minmax(86px, 34%) minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+}
+
+.skillset .level-title {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0 !important;
+  line-height: 1.1;
+}
+
+.skillset .level-bar {
+  width: 100% !important;
+  float: none !important;
+  top: 0 !important;
+}
+
+/* Certification vendor pill contrast. */
+.certifications-section .cert-url {
+  background: rgba(126, 231, 255, 0.12) !important;
+  border: 1px solid rgba(126, 231, 255, 0.42);
+  color: #eaf7ff !important;
+}
+
+.certifications-section .cert-url a {
+  color: #eaf7ff !important;
+  font-weight: 900;
+}
+
+/* Move the profile title away from the section dot. */
+.career-profile .section-title,
+.summary-section .section-title {
+  padding-left: 42px !important;
+}
+
+/* Put education items beside each other in one compact row. */
+.sidebar-wrapper .education-container {
+  padding: 16px 18px;
+}
+
+.sidebar-wrapper .education-container .container-block-title {
+  margin-bottom: 10px;
+}
+
+.sidebar-wrapper .education-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.sidebar-wrapper .education-container .container-block-title {
+  grid-column: 1 / -1;
+}
+
+.sidebar-wrapper .education-container .item {
+  margin-bottom: 0;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.075);
+  border-radius: 11px;
+  background: rgba(255, 255, 255, 0.026);
+}
+
+.sidebar-wrapper .education-container .item + .item {
+  border-top: 1px solid rgba(255, 255, 255, 0.075);
+}
+
 @media (max-width: 767px) {
-  .main-sidebar-cards-section .main-card-grid {
+  .main-sidebar-cards-section .main-card-grid,
+  .sidebar-wrapper .education-container {
     grid-template-columns: 1fr;
+  }
+
+  .skillset .item {
+    grid-template-columns: minmax(74px, 34%) minmax(0, 1fr);
   }
 }
