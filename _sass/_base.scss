@@ -1,4 +1,4 @@
-/* ======= 2026 Cyber Portfolio UI ======= */
+/* ======= 2026 Cyber Portfolio UI - lean dashboard pass ======= */
 
 * {
   box-sizing: border-box;
@@ -12,16 +12,15 @@ html {
 body {
   min-height: 100%;
   margin: 0;
-  padding: 34px;
+  padding: 18px;
   color: #dce8ff;
   background:
-    radial-gradient(circle at 10% 5%, rgba(0, 229, 255, 0.22), transparent 34rem),
-    radial-gradient(circle at 90% 12%, rgba(124, 92, 255, 0.24), transparent 34rem),
-    radial-gradient(circle at 50% 100%, rgba(45, 212, 191, 0.14), transparent 30rem),
+    radial-gradient(circle at 10% 5%, rgba(0, 229, 255, 0.18), transparent 30rem),
+    radial-gradient(circle at 90% 12%, rgba(124, 92, 255, 0.2), transparent 30rem),
     linear-gradient(135deg, #020308 0%, #060914 45%, #02040a 100%);
   font-family: "Inter", "Roboto", Arial, sans-serif;
-  font-size: 15px;
-  line-height: 1.65;
+  font-size: 14px;
+  line-height: 1.55;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -34,10 +33,10 @@ body::before {
   pointer-events: none;
   z-index: -2;
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
-  background-size: 42px 42px;
-  mask-image: linear-gradient(to bottom, rgba(0,0,0,0.95), transparent 86%);
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,0.95), transparent 88%);
 }
 
 body::after {
@@ -46,10 +45,8 @@ body::after {
   inset: 0;
   pointer-events: none;
   z-index: -1;
-  background:
-    linear-gradient(120deg, transparent 0%, rgba(255,255,255,0.045) 48%, transparent 52%),
-    repeating-linear-gradient(0deg, rgba(255,255,255,0.02) 0 1px, transparent 1px 6px);
-  opacity: 0.45;
+  background: repeating-linear-gradient(0deg, rgba(255,255,255,0.018) 0 1px, transparent 1px 7px);
+  opacity: 0.42;
 }
 
 h1,
@@ -68,79 +65,83 @@ h6 {
 a {
   color: #7ee7ff;
   text-decoration: none;
-  transition: color 180ms ease, opacity 180ms ease, transform 180ms ease;
+  transition: color 180ms ease, opacity 180ms ease;
   &:hover {
     color: #ffffff;
     text-decoration: none;
   }
   &:focus {
     text-decoration: none;
-    outline: 2px solid rgba(126, 231, 255, 0.55);
+    outline: 2px solid rgba(126, 231, 255, 0.5);
     outline-offset: 3px;
   }
 }
 
 p {
-  line-height: 1.72;
+  line-height: 1.58;
+  margin-bottom: 10px;
 }
 
 .wrapper {
   display: grid;
-  grid-template-columns: minmax(280px, 0.36fr) minmax(0, 0.64fr);
-  gap: 24px;
-  width: min(1180px, calc(100vw - 48px));
-  max-width: 1180px;
-  margin: 0 auto;
+  grid-template-columns: minmax(255px, 0.32fr) minmax(0, 0.68fr);
+  gap: 12px;
+  width: min(1120px, calc(100vw - 28px));
+  max-width: 1120px;
+  margin: 18px auto;
   position: relative;
-  background: rgba(255, 255, 255, 0.035);
+  background: rgba(255, 255, 255, 0.028);
   border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 34px;
-  padding: 18px;
+  border-radius: 26px;
+  padding: 10px;
   box-shadow:
-    0 30px 90px rgba(0, 0, 0, 0.56),
-    inset 0 1px 0 rgba(255, 255, 255, 0.14);
-  backdrop-filter: blur(22px);
+    0 24px 70px rgba(0, 0, 0, 0.52),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(18px);
   overflow: hidden;
 }
 
 .wrapper::before {
   content: "SYSTEMS PORTFOLIO // 2026";
   position: absolute;
-  top: 18px;
-  right: 24px;
+  top: 13px;
+  right: 18px;
   z-index: 2;
   font-family: "JetBrains Mono", monospace;
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 700;
-  letter-spacing: 0.24em;
+  letter-spacing: 0.2em;
   color: rgba(126, 231, 255, 0.62);
 }
 
 .wrapper::after {
   content: "";
   position: absolute;
-  width: 420px;
-  height: 420px;
-  right: -160px;
-  top: -180px;
-  background: radial-gradient(circle, rgba(0, 229, 255, 0.24), transparent 67%);
+  width: 360px;
+  height: 360px;
+  right: -155px;
+  top: -175px;
+  background: radial-gradient(circle, rgba(0, 229, 255, 0.2), transparent 68%);
   pointer-events: none;
+}
+
+.sidebar-wrapper,
+.main-wrapper {
+  position: relative;
+  z-index: 1;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
 .sidebar-wrapper {
   grid-column: auto;
   order: $sidebar-order;
-  position: relative;
-  z-index: 1;
   color: #eaf7ff;
   background:
-    linear-gradient(180deg, rgba(7, 13, 26, 0.94), rgba(4, 7, 13, 0.88)),
-    radial-gradient(circle at top, rgba(0, 229, 255, 0.18), transparent 42%);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 26px;
-  padding: 0;
-  overflow: hidden;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.09);
+    linear-gradient(180deg, rgba(7, 13, 26, 0.9), rgba(4, 7, 13, 0.86)),
+    radial-gradient(circle at top, rgba(0, 229, 255, 0.13), transparent 40%);
 
   a {
     color: #eaf7ff;
@@ -148,37 +149,35 @@ p {
   }
 
   .profile-container {
-    padding: 38px 28px 28px;
+    padding: 22px 18px 20px;
     text-align: center;
     color: #fff;
-    background:
-      linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02)),
-      radial-gradient(circle at 50% 0%, rgba(126, 231, 255, 0.22), transparent 58%);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.11);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.065), rgba(255, 255, 255, 0.018));
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   .profile-container::before {
     content: "IDENTITY LOCKED";
     display: inline-flex;
-    margin-bottom: 18px;
-    padding: 7px 12px;
-    border: 1px solid rgba(126, 231, 255, 0.26);
+    margin-bottom: 12px;
+    padding: 5px 10px;
+    border: 1px solid rgba(126, 231, 255, 0.24);
     border-radius: 999px;
     color: rgba(207, 247, 255, 0.84);
-    background: rgba(126, 231, 255, 0.07);
+    background: rgba(126, 231, 255, 0.06);
     font-family: "JetBrains Mono", monospace;
-    font-size: 10px;
+    font-size: 9px;
     font-weight: 700;
-    letter-spacing: 0.18em;
+    letter-spacing: 0.16em;
   }
 
   .name {
-    font-size: clamp(34px, 4.2vw, 54px);
+    font-size: clamp(30px, 3.4vw, 46px);
     font-weight: 900;
     line-height: 0.96;
-    margin: 18px 0 12px;
+    margin: 12px 0 8px;
     text-transform: uppercase;
-    background: linear-gradient(135deg, #ffffff 0%, #9ff3ff 40%, #bca8ff 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #9ff3ff 42%, #bca8ff 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -186,44 +185,44 @@ p {
 
   .tagline {
     color: rgba(234, 247, 255, 0.72);
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
-    line-height: 1.45;
+    line-height: 1.35;
     margin: 0 auto;
-    max-width: 260px;
+    max-width: 250px;
     font-family: "JetBrains Mono", monospace;
-    letter-spacing: 0.01em;
   }
 
   .profile {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
   .avatar {
-    width: 132px;
-    height: 132px;
-    max-width: 132px;
+    width: 105px;
+    height: 105px;
+    max-width: 105px;
     object-fit: cover;
     margin: 0 auto;
     display: block;
     border: 1px solid rgba(255, 255, 255, 0.22);
-    border-radius: 28px;
+    border-radius: 20px;
     box-shadow:
-      0 22px 55px rgba(0, 0, 0, 0.45),
-      0 0 0 7px rgba(255, 255, 255, 0.045),
-      0 0 44px rgba(126, 231, 255, 0.22);
-    transform: rotate(-1deg);
+      0 16px 38px rgba(0, 0, 0, 0.4),
+      0 0 0 5px rgba(255, 255, 255, 0.038),
+      0 0 34px rgba(126, 231, 255, 0.18);
   }
 
   .contact-list {
+    margin-bottom: 0;
     li {
-      margin-bottom: 12px;
-      padding: 10px 12px;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 16px;
-      background: rgba(255, 255, 255, 0.045);
+      margin-bottom: 7px;
+      padding: 8px 10px;
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.035);
       color: rgba(234, 247, 255, 0.88);
-      font-size: 13px;
+      font-size: 12px;
+      line-height: 1.35;
       &:last-child {
         margin-bottom: 0;
       }
@@ -231,40 +230,40 @@ p {
     .fas,
     .fab,
     .far {
-      width: 22px;
-      margin-right: 8px;
-      font-size: 15px;
+      width: 18px;
+      margin-right: 7px;
+      font-size: 13px;
       vertical-align: middle;
       color: #7ee7ff;
     }
   }
 
   .container-block {
-    padding: 24px;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 16px 18px;
+    border-top: 1px solid rgba(255, 255, 255, 0.075);
   }
 
   .container-block-title {
-    margin: 0 0 16px;
+    margin: 0 0 10px;
     color: #ffffff;
     text-transform: uppercase;
     font-family: "JetBrains Mono", monospace;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 800;
-    letter-spacing: 0.18em;
+    letter-spacing: 0.15em;
   }
 
   .degree {
     color: #ffffff;
-    font-size: 14px;
-    margin: 0 0 5px;
+    font-size: 13px;
+    margin: 0 0 3px;
   }
 
   .education-container {
     .item {
-      margin-bottom: 18px;
-      padding-bottom: 16px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      margin-bottom: 12px;
+      padding-bottom: 11px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.075);
       &:last-child {
         margin-bottom: 0;
         padding-bottom: 0;
@@ -276,22 +275,22 @@ p {
       color: rgba(234, 247, 255, 0.58);
       font-weight: 600;
       margin: 0;
-      font-size: 12px;
+      font-size: 11px;
+      line-height: 1.3;
     }
   }
 
-  .languages-container {
-    .lang-desc {
-      color: rgba(234, 247, 255, 0.62);
-    }
+  .languages-container .lang-desc {
+    color: rgba(234, 247, 255, 0.62);
   }
 
   .languages-list,
   .interests-list {
     margin-bottom: 0;
     li {
-      margin-bottom: 10px;
+      margin-bottom: 6px;
       color: rgba(234, 247, 255, 0.82);
+      line-height: 1.35;
       &:last-child {
         margin-bottom: 0;
       }
@@ -302,26 +301,21 @@ p {
 .main-wrapper {
   grid-column: auto;
   order: $resume-order;
-  position: relative;
-  z-index: 1;
   min-width: 0;
   color: rgba(226, 239, 255, 0.86);
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.035)),
-    rgba(6, 10, 20, 0.72);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 26px;
-  padding: 62px;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.025)),
+    rgba(6, 10, 20, 0.68);
+  padding: 22px;
 
   .section {
     position: relative;
-    margin-bottom: 42px;
-    padding: 26px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 24px;
-    background: rgba(255, 255, 255, 0.045);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.22);
+    margin-bottom: 14px;
+    padding: 14px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.075);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.026);
+    box-shadow: none;
     overflow: hidden;
   }
 
@@ -330,19 +324,19 @@ p {
     position: absolute;
     inset: 0 0 auto;
     height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(126, 231, 255, 0.82), transparent);
+    background: linear-gradient(90deg, transparent, rgba(126, 231, 255, 0.55), transparent);
   }
 
   .section-title {
     position: relative;
-    margin: 0 0 20px;
-    padding-left: 42px;
+    margin: 0 0 12px;
+    padding-left: 28px;
     color: #ffffff;
     text-transform: uppercase;
     font-family: "JetBrains Mono", monospace;
-    font-size: 14px;
+    font-size: 11px;
     font-weight: 900;
-    letter-spacing: 0.16em;
+    letter-spacing: 0.14em;
   }
 
   .section-title::before {
@@ -355,18 +349,18 @@ p {
   }
 
   .summary {
-    font-size: 16px;
+    font-size: 14px;
     color: rgba(240, 247, 255, 0.9);
   }
 
   .experiences-section,
   .educations-section {
     .item {
-      margin-bottom: 22px;
-      padding: 20px;
-      border: 1px solid rgba(255, 255, 255, 0.09);
-      border-radius: 20px;
-      background: rgba(2, 5, 12, 0.34);
+      margin-bottom: 10px;
+      padding: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 12px;
+      background: rgba(2, 5, 12, 0.22);
       &:last-child {
         margin-bottom: 0;
       }
@@ -377,9 +371,9 @@ p {
   .second-upper-row {
     position: relative;
     overflow: visible;
-    margin-bottom: 4px;
+    margin-bottom: 3px;
     display: flex;
-    gap: 16px;
+    gap: 10px;
     align-items: flex-start;
     justify-content: space-between;
   }
@@ -388,8 +382,8 @@ p {
   .degree,
   .cert-title {
     color: #ffffff;
-    font-size: 18px;
-    line-height: 1.25;
+    font-size: 15px;
+    line-height: 1.2;
     margin: 0;
     font-weight: 800;
     flex: 1 1 auto;
@@ -402,9 +396,9 @@ p {
     color: #06111a;
     background: linear-gradient(135deg, #7ee7ff, #bca8ff);
     border-radius: 999px;
-    padding: 5px 10px;
+    padding: 4px 8px;
     font-family: "JetBrains Mono", monospace;
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 800;
     white-space: nowrap;
   }
@@ -412,42 +406,43 @@ p {
   .company,
   .university,
   .cert-org {
-    margin: 0 0 12px;
+    margin: 0 0 8px;
     color: rgba(178, 210, 234, 0.78);
     font-family: "JetBrains Mono", monospace;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 700;
     letter-spacing: 0.02em;
   }
 
   ul {
-    padding-left: 20px;
+    padding-left: 17px;
+    margin-bottom: 0;
   }
 
   li {
-    margin-bottom: 7px;
+    margin-bottom: 4px;
   }
 
   .project-title,
   .publication-title {
     color: #ffffff;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 800;
-    margin: 0 0 6px;
+    margin: 0 0 4px;
   }
 
   .projects-section,
   .publications-section {
     .intro {
-      margin-bottom: 22px;
+      margin-bottom: 12px;
       color: rgba(226, 239, 255, 0.82);
     }
     .item {
-      margin-bottom: 14px;
-      padding: 18px;
-      border: 1px solid rgba(255, 255, 255, 0.09);
-      border-radius: 18px;
-      background: rgba(255, 255, 255, 0.04);
+      margin-bottom: 8px;
+      padding: 10px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.026);
       &:last-child {
         margin-bottom: 0;
       }
@@ -457,52 +452,52 @@ p {
   .publication-authors,
   .publication-conference {
     color: rgba(178, 210, 234, 0.78);
-    margin-bottom: 2px;
+    margin-bottom: 1px;
   }
 }
 
 .skillset {
   .item {
-    margin-bottom: 18px;
+    margin-bottom: 9px;
     overflow: hidden;
-    padding: 14px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 16px;
-    background: rgba(255, 255, 255, 0.035);
+    padding: 9px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.026);
   }
   .level-title {
     color: #f8fbff;
     font-family: "JetBrains Mono", monospace;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    margin: 0 0 10px;
+    margin: 0 0 7px;
   }
   .level-bar {
-    height: 11px;
+    height: 8px;
     background: rgba(255, 255, 255, 0.08);
     border-radius: 999px;
     overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.075);
   }
   .level-bar-inner {
     height: 100%;
     border-radius: inherit;
     background: linear-gradient(90deg, #7ee7ff, #8b7cff, #2dd4bf);
-    box-shadow: 0 0 22px rgba(126, 231, 255, 0.38);
+    box-shadow: 0 0 18px rgba(126, 231, 255, 0.32);
   }
 }
 
 .footer {
-  width: min(1180px, calc(100vw - 48px));
-  margin: 18px auto 0;
-  padding: 0 10px 28px;
+  width: min(1120px, calc(100vw - 28px));
+  margin: 10px auto 0;
+  padding: 0 8px 18px;
   text-align: center;
   .copyright {
-    line-height: 1.6;
+    line-height: 1.5;
     color: rgba(226, 239, 255, 0.52);
-    font-size: 12px;
+    font-size: 11px;
     font-family: "JetBrains Mono", monospace;
   }
 
