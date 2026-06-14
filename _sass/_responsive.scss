@@ -1,28 +1,30 @@
-/* ======= Responsive polish ======= */
+/* ======= Responsive polish - compact dashboard ======= */
 
 @media (max-width: 991px) {
   body {
-    padding: 18px;
+    padding: 10px;
   }
 
   .wrapper {
     width: min(100%, 860px);
     grid-template-columns: 1fr;
-    gap: 18px;
-    border-radius: 28px;
-    padding: 14px;
+    gap: 10px;
+    border-radius: 22px;
+    padding: 8px;
+    margin: 10px auto;
   }
 
   .wrapper::before {
     position: static;
     display: block;
-    margin: 4px 8px 0;
+    margin: 2px 6px 0;
     grid-column: 1 / -1;
   }
 
   .sidebar-wrapper,
   .main-wrapper {
     grid-column: 1 / -1;
+    border-radius: 18px;
   }
 
   .sidebar-wrapper {
@@ -31,13 +33,13 @@
 
   .main-wrapper {
     order: 2;
-    padding: 36px;
+    padding: 14px;
   }
 
   .main-wrapper .upper-row,
   .main-wrapper .second-upper-row {
     flex-direction: column;
-    gap: 8px;
+    gap: 6px;
   }
 
   .main-wrapper .time,
@@ -47,90 +49,90 @@
   }
 }
 
-/* Extra small devices */
 @media (max-width: 767px) {
   body {
-    padding: 10px;
+    padding: 6px;
   }
 
   .wrapper {
     width: 100%;
-    border-radius: 22px;
-    padding: 10px;
+    border-radius: 18px;
+    padding: 6px;
+    gap: 8px;
   }
 
   .wrapper::before {
-    font-size: 9px;
-    letter-spacing: 0.16em;
+    font-size: 8px;
+    letter-spacing: 0.14em;
   }
 
   .sidebar-wrapper,
   .main-wrapper {
-    border-radius: 20px;
+    border-radius: 16px;
   }
 
   .sidebar-wrapper .profile-container {
-    padding: 30px 20px 24px;
+    padding: 18px 14px 16px;
   }
 
   .sidebar-wrapper .avatar {
-    width: 118px;
-    height: 118px;
-    max-width: 118px;
-    border-radius: 24px;
+    width: 96px;
+    height: 96px;
+    max-width: 96px;
+    border-radius: 18px;
   }
 
   .sidebar-wrapper .name {
-    font-size: 36px;
+    font-size: 31px;
   }
 
   .sidebar-wrapper .container-block {
-    padding: 20px;
+    padding: 13px 14px;
   }
 
   .main-wrapper {
-    padding: 18px;
+    padding: 10px;
   }
 
   .main-wrapper .section {
-    padding: 18px;
-    border-radius: 18px;
-    margin-bottom: 18px;
+    padding: 11px 12px;
+    border-radius: 12px;
+    margin-bottom: 10px;
   }
 
   .main-wrapper .section-title {
-    font-size: 12px;
-    letter-spacing: 0.12em;
-    padding-left: 30px;
+    font-size: 10px;
+    letter-spacing: 0.11em;
+    padding-left: 24px;
+    margin-bottom: 9px;
   }
 
   .main-wrapper .job-title,
   .main-wrapper .degree,
   .main-wrapper .cert-title {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .main-wrapper .experiences-section .item,
   .main-wrapper .educations-section .item,
   .main-wrapper .projects-section .item,
   .main-wrapper .publications-section .item {
-    padding: 15px;
-    border-radius: 16px;
+    padding: 10px;
+    border-radius: 11px;
   }
 
   .footer {
     width: 100%;
-    padding-bottom: 18px;
+    padding-bottom: 12px;
   }
 }
 
-/* Medium devices and up */
 @media (min-width: 992px) {
   .skillset .level-title {
     float: left;
     width: 30%;
     margin-bottom: 0;
-    padding-right: 12px;
+    padding-right: 10px;
   }
 
   .skillset .level-bar {
@@ -143,8 +145,8 @@
 
 .skillset .level-bar-inner {
   width: auto;
-  -webkit-transition: width 1.4s ease-in-out;
-  -moz-transition: width 1.4s ease-in-out;
-  -o-transition: width 1.4s ease-in-out;
-  transition: width 1.4s ease-in-out;
+  -webkit-transition: width 1.2s ease-in-out;
+  -moz-transition: width 1.2s ease-in-out;
+  -o-transition: width 1.2s ease-in-out;
+  transition: width 1.2s ease-in-out;
 }
