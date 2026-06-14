@@ -1,64 +1,150 @@
-/* Extra small devices (phones, less than 768px) */
-@media (max-width: 767px) {
-  body {
-    padding: 0;
-  }
+/* ======= Responsive polish ======= */
 
-  .sidebar-wrapper {
-    position: static;
-    width: inherit;
+@media (max-width: 991px) {
+  body {
+    padding: 18px;
   }
 
   .wrapper {
+    width: min(100%, 860px);
+    grid-template-columns: 1fr;
+    gap: 18px;
+    border-radius: 28px;
+    padding: 14px;
+  }
+
+  .wrapper::before {
+    position: static;
     display: block;
+    margin: 4px 8px 0;
+    grid-column: 1 / -1;
+  }
+
+  .sidebar-wrapper,
+  .main-wrapper {
+    grid-column: 1 / -1;
+  }
+
+  .sidebar-wrapper {
+    order: 1;
   }
 
   .main-wrapper {
-    padding: 30px;
+    order: 2;
+    padding: 36px;
   }
 
-  .main-wrapper .time {
-    position: static;
-    display: block;
-    margin-top: 5px;
+  .main-wrapper .upper-row,
+  .main-wrapper .second-upper-row {
+    flex-direction: column;
+    gap: 8px;
   }
 
-  .main-wrapper .upper-row {
-    margin-bottom: 0;
+  .main-wrapper .time,
+  .main-wrapper .cert-url {
+    align-self: flex-start;
+    white-space: normal;
   }
 }
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+
+/* Extra small devices */
+@media (max-width: 767px) {
+  body {
+    padding: 10px;
+  }
+
+  .wrapper {
+    width: 100%;
+    border-radius: 22px;
+    padding: 10px;
+  }
+
+  .wrapper::before {
+    font-size: 9px;
+    letter-spacing: 0.16em;
+  }
+
+  .sidebar-wrapper,
+  .main-wrapper {
+    border-radius: 20px;
+  }
+
+  .sidebar-wrapper .profile-container {
+    padding: 30px 20px 24px;
+  }
+
+  .sidebar-wrapper .avatar {
+    width: 118px;
+    height: 118px;
+    max-width: 118px;
+    border-radius: 24px;
+  }
+
+  .sidebar-wrapper .name {
+    font-size: 36px;
+  }
+
+  .sidebar-wrapper .container-block {
+    padding: 20px;
+  }
+
+  .main-wrapper {
+    padding: 18px;
+  }
+
+  .main-wrapper .section {
+    padding: 18px;
+    border-radius: 18px;
+    margin-bottom: 18px;
+  }
+
+  .main-wrapper .section-title {
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    padding-left: 30px;
+  }
+
+  .main-wrapper .job-title,
+  .main-wrapper .degree,
+  .main-wrapper .cert-title {
+    font-size: 16px;
+  }
+
+  .main-wrapper .experiences-section .item,
+  .main-wrapper .educations-section .item,
+  .main-wrapper .projects-section .item,
+  .main-wrapper .publications-section .item {
+    padding: 15px;
+    border-radius: 16px;
+  }
+
+  .footer {
+    width: 100%;
+    padding-bottom: 18px;
+  }
 }
 
-/* Medium devices (desktops, 992px and up) */
+/* Medium devices and up */
 @media (min-width: 992px) {
   .skillset .level-title {
     float: left;
     width: 30%;
     margin-bottom: 0;
+    padding-right: 12px;
   }
 
   .skillset .level-bar {
     width: 70%;
     float: left;
     position: relative;
-    top: 1px;
+    top: 4px;
   }
 }
 
 .skillset .level-bar-inner {
   width: auto;
-  -webkit-transition: width 2s ease-in-out;
-  -moz-transition: width 2s ease-in-out;
-  -o-transition: width 2s ease-in-out;
-  transition: width 2s ease-in-out;
-}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-}
-
-/* Ex-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1400px) {
+  -webkit-transition: width 1.4s ease-in-out;
+  -moz-transition: width 1.4s ease-in-out;
+  -o-transition: width 1.4s ease-in-out;
+  transition: width 1.4s ease-in-out;
 }
