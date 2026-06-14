@@ -1,0 +1,35 @@
+{% assign languages = site.data.data.sidebar.languages %}
+{% assign interests = site.data.data.sidebar.interests %}
+{% if languages or interests %}
+<section class="section main-sidebar-cards-section">
+  <h2 class="section-title">Additional Profile</h2>
+
+  <div class="main-card-grid">
+    {% if languages %}
+    <div class="item profile-mini-card">
+      <h3 class="project-title">{{ languages.title }}</h3>
+      <ul>
+        {% for language in languages.info %}
+        <li>{{ language.idiom }} <span class="lang-desc">({{ language.level }})</span></li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    {% if interests %}
+    <div class="item profile-mini-card">
+      <h3 class="project-title">{{ interests.title }}</h3>
+      <ul>
+        {% for interest in interests.info %}
+          {% if interest.link %}
+          <li><a href="{{ interest.link }}" target="_blank">{{ interest.item }}</a></li>
+          {% else %}
+          <li>{{ interest.item }}</li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  </div>
+</section>
+{% endif %}
