@@ -1,0 +1,34 @@
+/* Targeted layout overrides */
+.sidebar-wrapper .languages-container,
+.sidebar-wrapper .interests-container,
+.sidebar-wrapper .remove-container {
+  display: none !important;
+}
+
+.main-sidebar-cards-section .main-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.main-sidebar-cards-section .profile-mini-card {
+  margin-bottom: 0 !important;
+}
+
+.main-sidebar-cards-section .profile-mini-card ul {
+  margin-bottom: 0;
+}
+
+.main-sidebar-cards-section .profile-mini-card li {
+  margin-bottom: 5px;
+}
+
+.main-sidebar-cards-section .lang-desc {
+  color: rgba(178, 210, 234, 0.78);
+}
+
+@media (max-width: 767px) {
+  .main-sidebar-cards-section .main-card-grid {
+    grid-template-columns: 1fr;
+  }
+}
