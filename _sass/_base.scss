@@ -1,12 +1,55 @@
-/* ======= Base ======= */
+/* ======= 2026 Cyber Portfolio UI ======= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: "Roboto", sans-serif;
-  color: $text-color-secondary;
-  background: $smoky-white;
-  font-size: 14px;
-  padding: 30px;
+  min-height: 100%;
+  margin: 0;
+  padding: 34px;
+  color: #dce8ff;
+  background:
+    radial-gradient(circle at 10% 5%, rgba(0, 229, 255, 0.22), transparent 34rem),
+    radial-gradient(circle at 90% 12%, rgba(124, 92, 255, 0.24), transparent 34rem),
+    radial-gradient(circle at 50% 100%, rgba(45, 212, 191, 0.14), transparent 30rem),
+    linear-gradient(135deg, #020308 0%, #060914 45%, #02040a 100%);
+  font-family: "Inter", "Roboto", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -2;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,0.95), transparent 86%);
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background:
+    linear-gradient(120deg, transparent 0%, rgba(255,255,255,0.045) 48%, transparent 52%),
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.02) 0 1px, transparent 1px 6px);
+  opacity: 0.45;
 }
 
 h1,
@@ -15,143 +58,240 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
+  margin-top: 0;
+  font-family: "Space Grotesk", "Inter", sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  color: #f8fbff;
 }
 
 a {
-  color: darken($theme-color, 15%);
+  color: #7ee7ff;
+  text-decoration: none;
+  transition: color 180ms ease, opacity 180ms ease, transform 180ms ease;
   &:hover {
-    text-decoration: underline;
-    color: darken($theme-color, 30%);
+    color: #ffffff;
+    text-decoration: none;
   }
   &:focus {
     text-decoration: none;
+    outline: 2px solid rgba(126, 231, 255, 0.55);
+    outline-offset: 3px;
   }
 }
 
 p {
-  line-height: 1.5;
+  line-height: 1.72;
 }
 
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  background: $theme-color;
-  max-width: 1000px;
+  grid-template-columns: minmax(280px, 0.36fr) minmax(0, 0.64fr);
+  gap: 24px;
+  width: min(1180px, calc(100vw - 48px));
+  max-width: 1180px;
   margin: 0 auto;
   position: relative;
-  @include box-shadow(0px 2px 4px rgba(0, 0, 0, 0.1));
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 34px;
+  padding: 18px;
+  box-shadow:
+    0 30px 90px rgba(0, 0, 0, 0.56),
+    inset 0 1px 0 rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(22px);
+  overflow: hidden;
+}
+
+.wrapper::before {
+  content: "SYSTEMS PORTFOLIO // 2026";
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  z-index: 2;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  color: rgba(126, 231, 255, 0.62);
+}
+
+.wrapper::after {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  right: -160px;
+  top: -180px;
+  background: radial-gradient(circle, rgba(0, 229, 255, 0.24), transparent 67%);
+  pointer-events: none;
 }
 
 .sidebar-wrapper {
-  grid-column: span 3;
+  grid-column: auto;
   order: $sidebar-order;
-  background: $theme-color;
-  color: #fff;
+  position: relative;
+  z-index: 1;
+  color: #eaf7ff;
+  background:
+    linear-gradient(180deg, rgba(7, 13, 26, 0.94), rgba(4, 7, 13, 0.88)),
+    radial-gradient(circle at top, rgba(0, 229, 255, 0.18), transparent 42%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 26px;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.09);
+
   a {
-    color: #fff;
+    color: #eaf7ff;
+    word-break: break-word;
   }
+
   .profile-container {
-    padding: 30px;
-    //background: darken($theme-color, 10%);
-    background: rgba(0, 0, 0, 0.2);
+    padding: 38px 28px 28px;
     text-align: center;
     color: #fff;
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02)),
+      radial-gradient(circle at 50% 0%, rgba(126, 231, 255, 0.22), transparent 58%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.11);
   }
+
+  .profile-container::before {
+    content: "IDENTITY LOCKED";
+    display: inline-flex;
+    margin-bottom: 18px;
+    padding: 7px 12px;
+    border: 1px solid rgba(126, 231, 255, 0.26);
+    border-radius: 999px;
+    color: rgba(207, 247, 255, 0.84);
+    background: rgba(126, 231, 255, 0.07);
+    font-family: "JetBrains Mono", monospace;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+  }
+
   .name {
-    font-size: 32px;
+    font-size: clamp(34px, 4.2vw, 54px);
     font-weight: 900;
-    margin-top: 0;
-    margin-bottom: 10px;
+    line-height: 0.96;
+    margin: 18px 0 12px;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #ffffff 0%, #9ff3ff 40%, #bca8ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
+
   .tagline {
-    color: rgba(256, 256, 256, 0.6);
-    font-size: 16px;
-    font-weight: 400;
-    margin-top: 0;
-    margin-bottom: 0;
+    color: rgba(234, 247, 255, 0.72);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.45;
+    margin: 0 auto;
+    max-width: 260px;
+    font-family: "JetBrains Mono", monospace;
+    letter-spacing: 0.01em;
   }
+
   .profile {
     margin-bottom: 15px;
   }
 
   .avatar {
-    //used for profile image
-    max-width: 100px;
-    margin-bottom: 15px;
-    border: 0px solid #fff;
-    border-radius: 100%;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    width: 132px;
+    height: 132px;
+    max-width: 132px;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 28px;
+    box-shadow:
+      0 22px 55px rgba(0, 0, 0, 0.45),
+      0 0 0 7px rgba(255, 255, 255, 0.045),
+      0 0 44px rgba(126, 231, 255, 0.22);
+    transform: rotate(-1deg);
   }
+
   .contact-list {
+    li {
+      margin-bottom: 12px;
+      padding: 10px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.045);
+      color: rgba(234, 247, 255, 0.88);
+      font-size: 13px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
     .fas,
     .fab,
     .far {
-      margin-right: 5px;
-      font-size: 18px;
+      width: 22px;
+      margin-right: 8px;
+      font-size: 15px;
       vertical-align: middle;
-    }
-    li {
-      margin-bottom: 15px;
-      &:last-child {
-        margin-bottom: 0;
-      }
+      color: #7ee7ff;
     }
   }
+
   .container-block {
-    padding: 30px;
+    padding: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
   }
+
   .container-block-title {
+    margin: 0 0 16px;
+    color: #ffffff;
     text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 700;
-    margin-top: 0;
-    margin-bottom: 15px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.18em;
   }
+
   .degree {
+    color: #ffffff;
     font-size: 14px;
-    margin-top: 0;
-    margin-bottom: 5px;
+    margin: 0 0 5px;
   }
+
   .education-container {
     .item {
-      margin-bottom: 15px;
+      margin-bottom: 18px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
       &:last-child {
         margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: 0;
       }
     }
-    .meta {
-      color: rgba(256, 256, 256, 0.6);
-      font-weight: 500;
-      margin-bottom: 0px;
-      margin-top: 0;
-    }
+    .meta,
     .time {
-      color: rgba(256, 256, 256, 0.6);
-      font-weight: 500;
-      margin-bottom: 0px;
+      color: rgba(234, 247, 255, 0.58);
+      font-weight: 600;
+      margin: 0;
+      font-size: 12px;
     }
   }
+
   .languages-container {
     .lang-desc {
-      color: rgba(256, 256, 256, 0.6);
+      color: rgba(234, 247, 255, 0.62);
     }
   }
 
-  .languages-list {
-    margin-bottom: 0;
-    li {
-      margin-bottom: 10px;
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-  }
-
+  .languages-list,
   .interests-list {
     margin-bottom: 0;
     li {
       margin-bottom: 10px;
+      color: rgba(234, 247, 255, 0.82);
       &:last-child {
         margin-bottom: 0;
       }
@@ -160,128 +300,218 @@ p {
 }
 
 .main-wrapper {
-  grid-column: span 7;
+  grid-column: auto;
   order: $resume-order;
-  background: #fff;
-  padding: 60px;
-  .section-title {
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: 500;
-    color: darken($theme-color, 15%);
-    position: relative;
-    margin-top: 0;
-    margin-bottom: 20px;
-  }
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+  color: rgba(226, 239, 255, 0.86);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.035)),
+    rgba(6, 10, 20, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 26px;
+  padding: 62px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+
   .section {
-    margin-bottom: 60px;
+    position: relative;
+    margin-bottom: 42px;
+    padding: 26px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.045);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.22);
+    overflow: hidden;
+  }
+
+  .section::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(126, 231, 255, 0.82), transparent);
+  }
+
+  .section-title {
+    position: relative;
+    margin: 0 0 20px;
+    padding-left: 42px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 0.16em;
+  }
+
+  .section-title::before {
+    content: "//";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #7ee7ff;
+    letter-spacing: 0;
+  }
+
+  .summary {
+    font-size: 16px;
+    color: rgba(240, 247, 255, 0.9);
   }
 
   .experiences-section,
   .educations-section {
     .item {
-      margin-bottom: 30px;
+      margin-bottom: 22px;
+      padding: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-radius: 20px;
+      background: rgba(2, 5, 12, 0.34);
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
+
   .upper-row,
   .second-upper-row {
     position: relative;
-    overflow: hidden;
-    margin-bottom: 2px;
+    overflow: visible;
+    margin-bottom: 4px;
     display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    justify-content: space-between;
   }
+
   .job-title,
   .degree,
-  .cert-title{
-    color: $text-color;
-    font-size: 16px;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-weight: 500;
-    flex: 75%;
+  .cert-title {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.25;
+    margin: 0;
+    font-weight: 800;
+    flex: 1 1 auto;
   }
+
   .time,
   .cert-url {
-    position: absolute;
-    right: 0;
-    top: 0;
-    color: $text-grey;
-    flex: 25%;
+    position: static;
+    flex: 0 0 auto;
+    color: #06111a;
+    background: linear-gradient(135deg, #7ee7ff, #bca8ff);
+    border-radius: 999px;
+    padding: 5px 10px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    font-weight: 800;
+    white-space: nowrap;
   }
+
   .company,
   .university,
   .cert-org {
-    margin-bottom: 10px;
-    color: $text-grey;
+    margin: 0 0 12px;
+    color: rgba(178, 210, 234, 0.78);
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
   }
 
-  .project-title {
-    font-size: 16px;
-    font-weight: 400;
-    margin-top: 0;
-    margin-bottom: 5px;
-    color: darken($theme-color, 15%);
-  }
-  .projects-section {
-    .intro {
-      margin-bottom: 30px;
-    }
-    .item {
-      margin-bottom: 15px;
-    }
+  ul {
+    padding-left: 20px;
   }
 
+  li {
+    margin-bottom: 7px;
+  }
+
+  .project-title,
   .publication-title {
-    font-size: 16px;
-    font-weight: 400;
-    color: $text-color;
-    margin-bottom: 1px;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 800;
+    margin: 0 0 6px;
   }
-  .publication-authors {
-    font-style: italic;
-    color: $text-grey;
-    margin-bottom: 1px;
-  }
+
+  .projects-section,
   .publications-section {
     .intro {
-      margin-bottom: 30px;
+      margin-bottom: 22px;
+      color: rgba(226, 239, 255, 0.82);
     }
     .item {
-      margin-bottom: 15px;
+      margin-bottom: 14px;
+      padding: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.04);
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
+  }
+
+  .publication-authors,
+  .publication-conference {
+    color: rgba(178, 210, 234, 0.78);
+    margin-bottom: 2px;
   }
 }
 
 .skillset {
   .item {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
     overflow: hidden;
+    padding: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.035);
   }
   .level-title {
-    font-size: 14px;
-    margin-top: 0;
-    margin-bottom: 12px;
+    color: #f8fbff;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 0 0 10px;
   }
   .level-bar {
-    height: 12px;
-    background: $smoky-white;
+    height: 11px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 999px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
   }
   .level-bar-inner {
-    height: 12px;
-    background: lighten($theme-color, 15%);
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #7ee7ff, #8b7cff, #2dd4bf);
+    box-shadow: 0 0 22px rgba(126, 231, 255, 0.38);
   }
 }
 
 .footer {
-  padding-top: 30px;
+  width: min(1180px, calc(100vw - 48px));
+  margin: 18px auto 0;
+  padding: 0 10px 28px;
+  text-align: center;
   .copyright {
     line-height: 1.6;
-    color: $text-color-secondary;
-    font-size: 13px;
+    color: rgba(226, 239, 255, 0.52);
+    font-size: 12px;
+    font-family: "JetBrains Mono", monospace;
   }
 
   .fa-heart {
-    color: $heart;
+    color: #7ee7ff;
   }
 }
 
+::selection {
+  color: #020308;
+  background: #7ee7ff;
+}
